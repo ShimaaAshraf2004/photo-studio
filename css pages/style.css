@@ -206,9 +206,8 @@ a {
 }
 .Why-Choose-Us article p {
   color: var(--paragraph-color);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
-  letter-spacing: 1px;
 }
 .services {
   background-color: var(--background-section);
