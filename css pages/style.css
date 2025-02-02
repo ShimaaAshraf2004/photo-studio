@@ -414,9 +414,9 @@ a {
   background-color: var(--hedding-color);
 }
 .footer .main-footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
   padding-block: 80px;
 }
 .footer .main-footer h2 {
@@ -466,7 +466,6 @@ a {
 .footer .footer-contact form input[type="email"] {
   color: var(--hedding-color);
   border-radius: 5px 0 0 5px;
-  flex-grow: 1;
 }
 ::placeholder {
   color:#9CA3AF;
@@ -548,8 +547,8 @@ a {
     width: 100%;
   }
 }
-/* @media (width < 1265px) {
+@media (width < 1265px) {
   .footer .main-footer {
     flex-direction: column;
   }
-} */
+}
