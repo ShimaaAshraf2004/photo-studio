@@ -149,18 +149,36 @@ a {
   font-size: 20px;
   margin-block: 30px;
 }
-.hero article a {
+.hero article .btn {
+  position: relative;
   color: black;
   font-size: 20px;
   padding: 10px 20px;
-  background-color: #fff;
   border: 2px solid #fff;
   border-radius: 30px;
   transition: all var(--transition-duration) var(--transition-timing-function);
+  background-color: transparent;
+  z-index: 0;
+  overflow: hidden;
 }
-.hero article a:hover {
+.hero article .btn:hover {
   color: #fff;
-  background: transparent;
+}
+.hero article .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
+.hero article .btn:hover::before {
+  transform: scaleX(0);
 }
 .Why-Choose-Us {
   padding-block: 70px;
