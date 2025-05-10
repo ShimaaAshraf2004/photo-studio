@@ -264,7 +264,8 @@ a {
 .services .wrapper .card img {
   width: 100%;
   height: 170px;
-  overflow: hidden;
+  
+  object-fit: cover;
   transition: all var(--transition-duration) var(--transition-timing-function);
 }
 .services .wrapper .card img:hover {
