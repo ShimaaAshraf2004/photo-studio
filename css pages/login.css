@@ -1,11 +1,16 @@
 :root {
+  --background-header: #fffc;
+  --background-footer: #111827;
+  --background-item: #fff;
+  --background-section-grey: #f9fafb;
+  --background-whait: #ffff;
   --header-color: #374151;
-  --main-color: #2563eb;
+  --main-color: #2563EB;
   --hedding-color: #111827;
   --paragraph-color: #4b5563;
-  --background-section: #f9fafb;
+  --color-title: #111827;
   --container-max-width: 1400px;
-  --container-padding-inline: 15px;
+  --container-padding-inline:15px;
   --transition-duration: 0.4s;
   --transition-timing-function: ease;
 }
@@ -19,6 +24,16 @@ body {
   max-width: 100dvw;
   min-height: 100dvh;
   font-family: "Roboto", serif;
+}
+body.dark {
+  --background-header: #111827cc;
+  --background-section-grey: #1f2937;
+  --background-whait: #111827;
+  --hedding-color: #ffff;
+  --background-item: #374151;
+  --color-title: #ffff;
+  --paragraph-color: #d1d5db;
+  --header-color: #ffff;
 }
 html {
   scroll-behavior: smooth;
