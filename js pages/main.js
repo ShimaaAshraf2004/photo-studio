@@ -14,7 +14,7 @@ menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
 document.addEventListener("click", (e) => {
-    if(!menu.contains(e.target) && !menuBtn.contains(e.target) && !toTopBtn.contains(e.target)) {
+    if(!menu.contains(e.target) && !menuBtn.contains(e.target) &&!toTopBtn.contains(e.target)) {
         menu.classList.remove("active");
     }
 });
