@@ -10,6 +10,7 @@ toggleModeBtn.addEventListener("click", () => {
 
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
+    menuBtn.classList.toggle("bx-x");
 });
 document.addEventListener("click", (e) => {
     if(!menu.contains(e.target) && !menuBtn.contains(e.target)) {
