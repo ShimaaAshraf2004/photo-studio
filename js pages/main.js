@@ -17,6 +17,7 @@ menuBtn.addEventListener("click", () => {
 document.addEventListener("click", (e) => {
     if(!menu.contains(e.target) && !menuBtn.contains(e.target) &&!toTopBtn.contains(e.target)) {
         menu.classList.remove("active");
+        menuBtn.classList.toggle("bx-x");
     }
 });
 
