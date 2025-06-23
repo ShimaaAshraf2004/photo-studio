@@ -15,9 +15,9 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("bx-x");
 });
 document.addEventListener("click", (e) => {
-    if(!menu.contains(e.target) && !menuBtn.contains(e.target) &&!toTopBtn.contains(e.target)) {
+    if(!menu.contains(e.target) && !menuBtn.contains(e.target) && !toTopBtn.contains(e.target)) {
         menu.classList.remove("active");
-        menuBtn.classList.toggle("bx-x");
+        menuBtn.classList.remove("bx-x");
     }
 });
 
