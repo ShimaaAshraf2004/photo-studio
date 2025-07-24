@@ -235,12 +235,12 @@ a {
 .Why-Choose-Us .content {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 35px;
 }
 .Why-Choose-Us article {
-  flex-grow: 1;
-  flex-basis: 150px;
+  flex-basis: min(415px, 100%);
   padding: 30px;
   background-color: var(--background-item);
   text-align: center;
