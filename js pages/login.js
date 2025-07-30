@@ -11,10 +11,16 @@ toggleModeBtn.addEventListener("click", () => {
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
     menuBtn.classList.toggle("bx-x");
+    toggleOverLay();
 });
-document.addEventListener("click", (e) => {
-    if(!menu.contains(e.target) && !menuBtn.contains(e.target)) {
-        menu.classList.remove("active");
-    menuBtn.classList.remove("bx-x");
+
+function toggleOverLay() {
+    const overlay = document.getElementById("overlay-model");
+    if (overlay) {
+        overlay.remove();
+    } else {
+        const newOverLay = document.createElement("div");
+        newOverLay.id = "overlay-model";
+        document.body.appendChild(newOverLay);
     }
-});
+}

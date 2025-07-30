@@ -386,6 +386,14 @@ a {
   .hero article h1 {
     font-size: 40px;
   }
+    #overlay-model {
+  position: fixed;
+  z-index: 990;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000099;
+}
 }
 @media (width < 407px) {
   .login .login-box {

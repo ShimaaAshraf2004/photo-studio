@@ -13,12 +13,7 @@ toggleModeBtn.addEventListener("click", () => {
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
     menuBtn.classList.toggle("bx-x");
-});
-document.addEventListener("click", (e) => {
-    if(!menu.contains(e.target) && !menuBtn.contains(e.target) && !toTopBtn.contains(e.target)) {
-        menu.classList.remove("active");
-        menuBtn.classList.remove("bx-x");
-    }
+    toggleOverLay();
 });
 
 window.addEventListener("scroll", () => {
@@ -33,4 +28,14 @@ toTopBtn.addEventListener("click", () => {
     });
 });
 
+function toggleOverLay() {
+    const overlay = document.getElementById("overlay-model");
+    if (overlay) {
+        overlay.remove();
+    } else {
+        const newOverLay = document.createElement("div");
+        newOverLay.id = "overlay-model";
+        document.body.appendChild(newOverLay);
+    }
+}
 
